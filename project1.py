@@ -207,7 +207,7 @@ class Ui_Parkinsons_Diseases(object):
         self.Accuracy1.setText("Acurracy of Linear Regression : {:.2f}".format(x1))
         #Confusion_matrix1
         cm=confusion_matrix(Y_test,Y_predmod1)
-        plt.figure(figsize=(5,5))
+        plt.figure(figsize=(2,2))
         plt.title("Linear Regression")
         fg=sn.heatmap(cm,annot=True,cmap='Blues')
         figure = fg.get_figure()
@@ -225,7 +225,7 @@ class Ui_Parkinsons_Diseases(object):
         self.Accuracy2.setText("Acurracy of Logistic Regression : {:.2f}".format(x2))
         #Confusion_matrix1
         cm=confusion_matrix(Y_test,Y_predmod2)
-        plt.figure(figsize=(5,5))
+        plt.figure(figsize=(2,2))
         plt.title("Logistic Regression")
         fg=sn.heatmap(cm,annot=True)
         figure = fg.get_figure()
@@ -242,7 +242,7 @@ class Ui_Parkinsons_Diseases(object):
         self.Accuracy3.setText("Acurracy of Desicion Tree : {:.2f}".format(x3))
         #Confusion_matrix1
         cm=confusion_matrix(Y_test,Y_predmod3)
-        plt.figure(figsize=(5,5))
+        plt.figure(figsize=(2,2))
         plt.title("Desicion Tree")
         fg=sn.heatmap(cm,annot=True,cmap='BrBG')
         figure = fg.get_figure()
@@ -259,7 +259,7 @@ class Ui_Parkinsons_Diseases(object):
         self.Accuracy4.setText("Acurracy of Support Vector Machines : {:.2f}".format(x4))
         #Confusion_matrix1
         cm=confusion_matrix(Y_test,Y_predmod4)
-        plt.figure(figsize=(5,5))
+        plt.figure(figsize=(2,2))
         plt.title("Support Vector Machines")
         fg=sn.heatmap(cm,annot=True,cmap='Greens')
         figure = fg.get_figure()
@@ -276,7 +276,7 @@ class Ui_Parkinsons_Diseases(object):
         self.Accuracy5.setText("Acurracy of Random Forest : {:.2f}".format(x5))
         #Confusion_matrix1
         cm=confusion_matrix(Y_test,Y_predmod5)
-        plt.figure(figsize=(5,5))
+        plt.figure(figsize=(2,2))
         plt.title("Random Forest")
         fg=sn.heatmap(cm,annot=True,cmap='Oranges')
         figure = fg.get_figure()
@@ -294,7 +294,7 @@ class Ui_Parkinsons_Diseases(object):
         self.Accuracy6.setText("Acurracy of XGBClassifier : {:.2f}".format(x6))
         #Confusion_matrix1
         cm=confusion_matrix(Y_test,Y_predmod6)
-        plt.figure(figsize=(5,5))
+        plt.figure(figsize=(2,2))
         plt.title("XGBClassifier")
         fg=sn.heatmap(cm,annot=True)
         figure = fg.get_figure()
@@ -328,7 +328,7 @@ class Ui_Parkinsons_Diseases(object):
         self.Accuracy7.setText("Acurracy of Neural Network : {:.2f}".format(x7))
         #confusion Matrix
         cm=confusion_matrix(Y_test,predd)
-        plt.figure(figsize=(5,5))
+        plt.figure(figsize=(2,2))
         plt.title("Neural Network")
         fg=sn.heatmap(cm,annot=True)
         figure = fg.get_figure()
